@@ -3,7 +3,7 @@ Summary:	null session save handler for PHP
 Summary(pl.UTF-8):	Obsługa zapisywania sesji w bazie null dla PHP
 Name:		php-pecl-%{_modname}
 Version:	0.5
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://glen.alkohol.ee/pld/%{_modname}-%{version}.tar.bz2
