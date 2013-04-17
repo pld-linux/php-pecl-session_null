@@ -1,17 +1,18 @@
+%define		php_name	php%{?php_suffix}
 %define		modname	session_null
 Summary:	null session save handler for PHP
 Summary(pl.UTF-8):	Obsługa zapisywania sesji w bazie null dla PHP
-Name:		php-pecl-%{modname}
+Name:		%{php_name}-pecl-%{modname}
 Version:	0.5
 Release:	3
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://glen.alkohol.ee/pld/%{modname}-%{version}.tar.bz2
 # Source0-md5:	230c008bde95b0d888edbddb7b55e455
-BuildRequires:	php-devel >= 3:5.0.0
+BuildRequires:	%{php_name}-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
-Requires:	php-common >= 4:5.0.4
+Requires:	php(core) >= 5.0.4
 Provides:	php(session_null)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
