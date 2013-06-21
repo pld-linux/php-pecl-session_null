@@ -10,7 +10,7 @@ Group:		Development/Languages/PHP
 Source0:	http://glen.alkohol.ee/pld/%{modname}-%{version}.tar.bz2
 # Source0-md5:	230c008bde95b0d888edbddb7b55e455
 BuildRequires:	%{php_name}-devel >= 3:5.0.0
-BuildRequires:	rpmbuild(macros) >= 1.344
+BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Requires:	php(core) >= 5.0.4
 Provides:	php(session_null)
